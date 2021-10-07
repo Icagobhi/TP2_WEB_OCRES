@@ -5,24 +5,59 @@
 
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
-	</head>
-	<body>
-		<header>
-			<div class="wrapper">
-				<div class="logo-search">
-					<img class="pull-left" src="img/logo.png" />
-				</div>
+		<link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css"/>
 
-				<form method="POST" action="index.html">
-					<input type="search" required class="search">
-					<input type="submit" name="submit" value="Rechercher" class="submit">
-				</form>
-				<div class="user">
-				    <a href="#">Luke Chesser</a>
-				</div>
+
+		<style type="text/css">
+
+		body{
+			font-size: 12px;
+		}
+
+		.wrapper{
+			display: flex;
+			justify-content: space-between;
+			align-content: center;	
+			margin: 10px;	
+				}
+
+		.user{
+			align-items: end;
+		}
+		
+				</style>
+		
+	</head>
+
+	<body>
+		<div class="container-fluide">
+
+	<header style="background-color: white;box-shadow: 0px 0px 5px #333; margin-bottom: 20px;">
+	<div class="row">
+
+		<div class="wrapper">
+			<div class="logo-search" class="col-sm-1">
+					<img class="pull-left" src="img/logo.png">
 			</div>
+
+			<div class="col-sm-5">
+				<form method="POST" action="index.html">
+					<input type="search" required class="search" placeholder="Search">
+					<input type="submit" name="submit" value="Rechercher" class="submit">
+					
+				</form>
+			</div>	
+
+			<div class="user" style="align-self: flex-end;">
+				    <a href="#">Luke Chesser</a>
+			</div>
+		 </div>	
+	</div>
+
 		</header>
-		<aside>
+
+		<div class="row">
+		<aside class="col-sm-2">
 			<h3>Browse</h3>
 			<nav class="browse">
 				<ul class="main">
@@ -41,7 +76,7 @@
 			</nav>
 		</aside>
 
-		<main>
+		<main class="col-sm-10">
 			<header>
 				<div class="name-photo">
 					<aside>
@@ -154,5 +189,8 @@
 				</article>
 			</section>
 		</main>
+	</div>
+	</div>
 	</body>
+	
 </html>
